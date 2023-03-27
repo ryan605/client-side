@@ -1,0 +1,10 @@
+{
+    "tasks":[
+        {
+            "title":"washing dishes",
+            "description":"cleaning dishes wooow :(",
+            "priority":"HIGH",
+            "status":"DOING"
+        }
+    ]
+}
