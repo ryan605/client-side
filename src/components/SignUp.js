@@ -1,9 +1,9 @@
 import React,{useState} from "react"
-// import {useNavigate} from "react-router-dom"
+ import {useNavigate} from "react-router-dom"
 
 function Signup(){
 
-    // const navigate = useNavigate()
+     const navigate = useNavigate()
     const [username, setUsername] = useState('')
     const [email, setEmail] = useState ('')
     const [password, setPassword] = useState ('')
@@ -19,8 +19,8 @@ function Signup(){
                 body: JSON.stringify({ username, email, password }),
             });
             const data = await res.json();
-            // localStorage.setItem('token', data.token);
-            // navigate('/todo');
+             localStorage.setItem('token', data.token);
+             navigate('/todo');
         } catch (err) {
             console.log(err.message);
         }
